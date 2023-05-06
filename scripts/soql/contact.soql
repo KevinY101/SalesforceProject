@@ -1,0 +1,4 @@
+SELECT LastName, Id, Email, Description
+  FROM Contact
+  ORDER BY LastName ASC NULLS FIRST
+  LIMIT 10

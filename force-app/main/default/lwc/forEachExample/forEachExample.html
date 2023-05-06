@@ -1,0 +1,12 @@
+<!-- helloForEach.html -->
+<template>
+    <lightning-card title="HelloForEach" icon-name="custom:custom14">
+        <ul class="slds-var-m-around_medium">
+            <template for:each={contacts} for:item="contact"> <!-- Array for(Contact con : listCons) -->
+                <li key={contact.Id}> <!-- should be unique -->
+                    {contact.Name}, {contact.Title}
+                </li>
+            </template>
+        </ul>
+    </lightning-card>
+</template>

@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title="Bike Card" icon-name="custom:custom14">
+        
+        <div id="waiting" if:false={ready}>Loading…</div>
+
+        <div if:true={ready} class="slds-var-m-around_medium" id="display" >
+           <!-- This is how we can pass down data from app component to bike component
+             bike property of Bike component is being filled by the value of
+             app component bike object property  
+             app is parent component , bike is child component -->
+            <c-bike child-bike ={bike1} > </c-bike>
+            <c-bike child-bike ={bike2} > </c-bike>
+
+        </div>
+
+    </lightning-card>
+</template>

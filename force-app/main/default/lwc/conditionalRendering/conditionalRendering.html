@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title = "Conditionally Rendered Statements">
+        <template lwc:if = {expression1}>
+            Statement 1: Hi
+        </template>
+        <template lwc:elseif = {expression2}>
+            Statement 2: Hello
+        </template>
+        <template lwc:else>
+            Statement 3: How are you?
+        </template>
+
+    </lightning-card>
+    
+</template>

@@ -1,0 +1,12 @@
+<template>
+  <lightning-card title="Call Apex From LWC" icon-name="custom:custom63">
+    <div class="slds-m-around_medium">
+        <template if:true={accountList.data}>
+            <template for:each={accountList.data} for:item="acc">
+                <p key={acc.Id}>{acc.Name}, {acc.AccountNumber} </p>
+            </template>
+        </template>
+            <template if:true={accountList.error}>{accountList.error}</template>
+    </div>
+  </lightning-card>
+</template>

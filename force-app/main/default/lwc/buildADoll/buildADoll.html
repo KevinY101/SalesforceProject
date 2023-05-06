@@ -1,0 +1,42 @@
+<template>
+  <lightning-card title="Build a dolly!" icon-name="custom:custom1">
+    <p class="slds-p-horizontal_small"></p>
+
+    <div class="slds-p-horizontal_small">
+      <p>Hello, {yourName}! Let's make dolly!</p>
+      <lightning-input
+        label="Your name"
+        value={yourName}
+        onchange={yourNameHandler}
+      ></lightning-input>
+
+      <p>My Dolly's name is {dollyName}</p>
+      <lightning-input
+        label="Dolly name"
+        value={dollyName}
+        onchange={dollyHandler}
+      ></lightning-input>
+
+      <p>What's dolly like? Well.. she's {description}</p>
+      <lightning-input
+        label="description"
+        value={description}
+        onchange={descHandler}
+      ></lightning-input>
+    </div>
+
+    <div class="slds-m-around_medium">
+      <lightning-input
+        type="checkbox"
+        label="...is Dolly haunted?"
+        onchange={HauntedHandler}
+      ></lightning-input>
+      <template lwc:if={isHaunted}>
+        <div class="slds-m-vertical_medium">
+          oh no! dolly is possessed!
+          <img src={pictureUrl} />
+        </div>
+      </template>
+    </div>
+  </lightning-card>
+</template>
