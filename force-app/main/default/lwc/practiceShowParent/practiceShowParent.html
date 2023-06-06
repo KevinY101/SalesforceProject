@@ -1,0 +1,21 @@
+<template>
+    
+    <lightning-card title="Opp Parent Account" icon-name="standard:account">
+        <div class="slds-var-m-around_medium">
+
+            <template lwc:if={accId}>
+                <lightning-record-form
+                    object-api-name={accObjectApiName}
+                    record-id={accId}
+                    fields={fields}
+                    mode="readonly"
+                ></lightning-record-form>
+            </template>
+            <template lwc:else>
+                <p>NO PARENT ACCOUNT</p>
+            </template>
+
+        </div>
+    </lightning-card>
+
+</template>
