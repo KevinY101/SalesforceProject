@@ -17,3 +17,4 @@ export default class Practice8 extends LightningElement {
     
   }
 }
+

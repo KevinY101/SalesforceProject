@@ -1,0 +1,32 @@
+<!-- sldsValidatorIgnore -->
+<template>
+  <lightning-card title="Accounts and Contacts With Com" icon-name="standard:account">
+    <div class="slds-var-m-around_medium">
+      <div>
+        <template lwc:if={accList}>
+          <lightning-datatable
+            key-field="id"
+            data={accList}
+            columns={accColumns}
+            hide-checkbox-column
+            show-row-number-column
+          >
+          </lightning-datatable>
+        </template>
+      </div>
+
+      <div>
+        <template lwc:if={conList}>
+          <lightning-datatable
+            key-field="id"
+            data={conList}
+            columns={conColumns}
+            hide-checkbox-column
+            show-row-number-column
+          >
+          </lightning-datatable>
+        </template>
+      </div>
+    </div>
+  </lightning-card>
+</template>
