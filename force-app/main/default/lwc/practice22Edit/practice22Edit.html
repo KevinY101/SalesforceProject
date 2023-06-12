@@ -1,0 +1,19 @@
+<template>
+    
+    <lightning-card title="Lightning Record Form Edit Mode" icon-name="utility:form">
+        <div class="slds-var-m-around_medium">
+
+            <lightning-record-form
+                object-api-name={objectApiName}
+                record-id={recordId}
+                fields={fields}
+                onsuccess={handleSuccess}
+                mode = "edit"
+            ></lightning-record-form>
+            <!-- if mode is not provided and record-id exists , it will be view mode by default
+            here we are explicitly making it edit mode -->
+
+        </div>
+    </lightning-card>
+
+</template>
