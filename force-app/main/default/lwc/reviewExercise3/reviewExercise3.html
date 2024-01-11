@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="Repeating Elements" icon-name="standard:account">
+      <div class="slds-var-m-around_medium">
+       <template if:true={companies} for:each={companies} for:item="each" for:index="index">
+          <ol key={each.id}>
+               Company name: {each.name} 
+               <br>
+               City name: {each.city}
+          </ol>
+       </template>
+
+
+      </div>
+    </lightning-card>
+  </template>
+  

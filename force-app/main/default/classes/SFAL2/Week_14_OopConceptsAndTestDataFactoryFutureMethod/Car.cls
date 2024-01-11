@@ -1,4 +1,4 @@
-public class Car extends Vehicle {
+public with sharing class Car extends Vehicle {
 
 
   public override void start() {

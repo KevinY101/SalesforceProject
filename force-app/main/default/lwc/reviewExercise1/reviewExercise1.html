@@ -1,0 +1,23 @@
+<template>
+  <lightning-card title="Review Component 1">
+    <div class="slds-var-m-around_medium">
+        <lightning-input 
+          type="text"
+          label="Enter Message"
+          value={message}
+          onchange={handleChange}
+        ></lightning-input>
+        <lightning-input 
+          type="number" 
+          label="Enter a number" 
+          placeholder="$50.0"
+          value = {price}
+          onchange= {handlePriceChange}
+          formatter="currency"
+           
+        ></lightning-input>
+      <p>This is some content {message} </p>
+      <p>This is the double price: ${doubledPrice} </p>
+    </div>
+  </lightning-card>
+</template>

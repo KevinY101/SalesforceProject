@@ -5,6 +5,6 @@
 
 SELECT Id, Name, AnnualRevenue, Website
   FROM Account
-  WHERE Website != Null
+  WHERE Name LIKE '%C%'
   ORDER BY Name ASC NULLS FIRST
   LIMIT 10

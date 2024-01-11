@@ -1,0 +1,44 @@
+<template>
+  <lightning-card
+    variant="Narrow"
+    title="Navigation Service in LWC"
+    icon-name="standard:account"
+  >
+    <lightning-card title="Navigate to Accounts" icon-name="standard:account">
+      <lightning-button
+        label="New Account"
+        variant="border-filled"
+        onclick={navigateToNewAccountPage}
+      ></lightning-button>
+      <lightning-button
+        label="Account Recent List View"
+        variant="border-filled"
+        onclick={navigateToAccountRecentList}
+      ></lightning-button>
+      <lightning-card title="Navigate to Home" icon-name="standard:account">
+        <lightning-button
+          label="Navigate to Home"
+          variant="border-filled"
+          onclick={navigateToHomePage}
+        ></lightning-button>
+      </lightning-card>
+      <lightning-card
+        title="Navigate to Component"
+        icon-name="standard:account"
+      >
+        <lightning-button
+          label="Navigate to Component 1"
+          variant="border-filled"
+          onclick={navigateToCompo1}
+        ></lightning-button>
+      </lightning-card>
+      <lightning-card title="Navigate to WebPage" icon-name="standard:account">
+        <lightning-button
+          label="Navigate to WebPage"
+          variant="border-filled"
+          onclick={navigateToWebPage}
+        ></lightning-button>
+      </lightning-card>
+    </lightning-card>
+  </lightning-card>
+</template>

@@ -22,7 +22,7 @@ public class AccountTriggerTest {
 
         //Assert
 
-        System.assertEquals('Salesforce', c1.LastName);
+        System.assertEquals('Salesforce', conList[0].LastName);
         System.assertEquals(1, conList.size());
 
     }

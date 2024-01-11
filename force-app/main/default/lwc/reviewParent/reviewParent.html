@@ -1,0 +1,11 @@
+<template>
+  <lightning-card title="Parent Component" icon-name="standard:contact">
+    <div class="slds-var-m-around_medium">
+      <p>Text On Parent: {parentMessage}</p>
+
+      <c-review-child message="From Parent 1" ontell={handleChildTell}>
+      </c-review-child>
+      <!--c-review-child message={parentMessage}> </c-review-child-->
+    </div>
+  </lightning-card>
+</template>

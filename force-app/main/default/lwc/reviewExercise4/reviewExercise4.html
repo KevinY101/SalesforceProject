@@ -1,0 +1,12 @@
+<template>
+  <lightning-card title="Wiring Data" icon-name="standard:contact">
+    <div class="slds-var-m-around_medium">
+      <template lwc:if={cons} for:each={cons} for:item="each">
+        <p key={each.Id}>{each.FirstName} {each.Phone}</p>
+      </template>
+      <template lwc:if={error}>
+        <p>Error message: {error.body.message}</p>
+      </template>
+    </div>
+  </lightning-card>
+</template>

@@ -1,0 +1,4 @@
+SELECT AVG(Amount)
+  FROM Opportunity
+WHERE Id = '006Dn00000Bw7vZIAR' AND StageName = 'Closed Won'
+  

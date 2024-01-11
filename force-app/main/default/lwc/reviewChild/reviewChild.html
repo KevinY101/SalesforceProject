@@ -1,0 +1,12 @@
+<template>
+  <lightning-card title="Child Component" icon-name="standard:contact">
+    <div class="slds-var-m-around_medium">
+      <p>{message}</p>
+      <lightning-button
+        variant="brand"
+        label="Tell Parent"
+        onclick={handleChildClick}
+      ></lightning-button>
+    </div>
+  </lightning-card>
+</template>
